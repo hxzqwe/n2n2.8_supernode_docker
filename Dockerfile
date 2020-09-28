@@ -8,4 +8,4 @@ RUN git clone https://github.com/ntop/n2n.git -b 2.8-stable
 WORKDIR /usr/local/src/n2n
 RUN ./autogen.sh && ./configure && make && make install
 
-ENTRYPOINT ["/usr/sbin/supernode","-l","9527"]
+ ["/usr/sbin/supernode","-l","9527"]
