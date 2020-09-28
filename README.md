@@ -1,6 +1,6 @@
 # How to use
 
-## Setup up a Supernode
+## Setup up a supernode
 ```
 git clone https://github.com/hxzqwe/n2n_v2.8_docker.git
 cd n2n_v2.8_docker
