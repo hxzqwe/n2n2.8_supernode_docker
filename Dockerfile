@@ -8,4 +8,7 @@ RUN git clone https://github.com/ntop/n2n.git -b 2.8-stable
 WORKDIR /usr/local/src/n2n
 RUN ./autogen.sh && ./configure && make && make install
 
+FROM ubuntu:16.04
+COPY --from=0 /usr/sbin/supernode /usr/sbin
+COPY --from=0 /usr/sbin/edge /usr/sbin
 CMD ["/usr/sbin/supernode","-l","9527"]
