@@ -22,3 +22,4 @@ cd n2n_docker
 docker build -t hxzqwe/n2n:3.0 .
 docker run -d --privileged --net=host --name n2n_edge hxzqwe/n2n:3.0 /usr/sbin/edge -c mynetwork -k mysecretpass -a 192.168.100.2 -l supernode.ntop.org:9527 -f
 ```
+
